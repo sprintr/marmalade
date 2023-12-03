@@ -51,7 +51,7 @@ curl --location --request POST 'https://{baseUrl}/v1/auth/sign-in' \
 To get an OAuth token. You'll need to create an application and use the provided `client_id` and `client_secret` to get an access token.
 
 ```http
-POST https://{baseUrl}/oauth/access_token
+POST https://{baseUrl}/oauth/access_token HTTP/1.1
 ```
 
 ```bash
@@ -74,7 +74,9 @@ curl --location --request POST 'https://{baseUrl}/oauth/access_token' \
 
 ## Create a user
 
-`POST https://{baseUrl}/v1/users`
+```http
+POST https://{baseUrl}/v1/users HTTP/1.1
+```
 
 ```bash
 curl --location --request POST 'https://{baseUrl}/v1/users' \
@@ -99,7 +101,9 @@ curl --location --request POST 'https://{baseUrl}/v1/users' \
 
 Returns a list of users
 
-`GET https://{baseUrl}/v1/users`
+```http
+GET https://{baseUrl}/v1/users HTTP/1.1
+```
 
 ```bash
 curl --location --request GET 'https://{baseUrl}/v1/users' \
@@ -110,7 +114,9 @@ curl --location --request GET 'https://{baseUrl}/v1/users' \
 
 Returns a single user
 
-`GET https://{baseUrl}/v1/users/{userId}`
+```http
+GET https://{baseUrl}/v1/users/{userId} HTTP/1.1
+```
 
 ```bash
 curl --location --request GET 'https://{baseUrl}/v1/users/1' \
@@ -119,7 +125,9 @@ curl --location --request GET 'https://{baseUrl}/v1/users/1' \
 
 ## Update a user
 
-`PUT https://{baseUrl}/v1/users/{userId}`
+```http
+PUT https://{baseUrl}/v1/users/{userId} HTTP/1.1
+```
 
 ```bash
 curl --location --request PUT 'https://{baseUrl}/v1/users/1' \
@@ -144,7 +152,9 @@ curl --location --request PUT 'https://{baseUrl}/v1/users/1' \
 
 Updates the role of a user
 
-`PUT https://{baseUrl}/v1/users/{userId}/role`
+```http
+PUT https://{baseUrl}/v1/users/{userId}/role HTTP/1.1
+```
 
 ```bash
 curl --location --request PUT 'https://{baseUrl}/v1/users/1/role' \
@@ -161,7 +171,9 @@ curl --location --request PUT 'https://{baseUrl}/v1/users/1/role' \
 
 Updates the status of a user
 
-`PUT https://{baseUrl}/v1/users/{userId}/status`
+```http
+PUT https://{baseUrl}/v1/users/{userId}/status HTTP/1.1
+```
 
 ```bash
 curl --location --request PUT 'https://{baseUrl}/v1/users/1/status' \
@@ -178,7 +190,9 @@ curl --location --request PUT 'https://{baseUrl}/v1/users/1/status' \
 
 Deletes a user
 
-`DELETE https://{baseUrl}/v1/users/1`
+```http
+DELETE https://{baseUrl}/v1/users/1 HTTP/1.1
+```
 
 ```bash
 curl --location --request DELETE 'https://{baseUrl}/v1/users/1' \
@@ -193,7 +207,9 @@ curl --location --request DELETE 'https://{baseUrl}/v1/users/1' \
 
 Creates an application.
 
-`POST https://{baseUrl}/v1/applications`
+```http
+POST https://{baseUrl}/v1/applications HTTP/1.1
+```
 
 ```bash
 curl --location --request POST 'https://{baseUrl}/v1/applications' \
@@ -216,7 +232,9 @@ curl --location --request POST 'https://{baseUrl}/v1/applications' \
 
 Returns a list of applications
 
-`GET https://{baseUrl}/v1/applications`
+```http
+GET https://{baseUrl}/v1/applications HTTP/1.1
+```
 
 ```bash
 curl --location --request GET 'https://{baseUrl}/v1/applications' \
@@ -227,7 +245,9 @@ curl --location --request GET 'https://{baseUrl}/v1/applications' \
 
 Returns a single application
 
-``GET https://{baseUrl}/v1/applications/{applicationId}`
+```http
+GET https://{baseUrl}/v1/applications/{applicationId} HTTP/1.1
+```
 
 ```bash
 curl --location --request GET 'https://{baseUrl}/v1/applications/{applicationId}' \
@@ -238,7 +258,9 @@ curl --location --request GET 'https://{baseUrl}/v1/applications/{applicationId}
 
 Updates an application
 
-`PUT https://{baseUrl}/v1/applications/{applicationId}`
+```http
+PUT https://{baseUrl}/v1/applications/{applicationId} HTTP/1.1
+```
 
 ```bash
 curl --location --request PUT 'https://{baseUrl}/v1/applications/93' \
@@ -253,7 +275,9 @@ curl --location --request PUT 'https://{baseUrl}/v1/applications/93' \
 
 Updates an application's credentials
 
-`PUT https://{baseUrl}/v1/applications/{applicationId}/credentials`
+```http
+PUT https://{baseUrl}/v1/applications/{applicationId}/credentials HTTP/1.1
+```
 
 ```bash
 curl --location --request PUT 'https://{baseUrl}/v1/applications/{applicationId}/credentials' \
@@ -264,7 +288,9 @@ curl --location --request PUT 'https://{baseUrl}/v1/applications/{applicationId}
 
 Deletes an application
 
-`DELETE https://{baseUrl}/v1/applications/{applicationId}`
+```http
+DELETE https://{baseUrl}/v1/applications/{applicationId} HTTP/1.1
+```
 
 ```bash
 curl --location --request DELETE 'https://{baseUrl}/v1/applications/93' \
