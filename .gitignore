@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.development
+build/**/*.js
+build/**/*.map
+logs-test.log
+database.sqlite3
+certs/PRIVATE.pem
+certs/PUBLIC.pem

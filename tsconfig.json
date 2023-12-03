@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"esModuleInterop": true,
+		"target": "ES6",
+		"moduleResolution": "Node",
+		"sourceMap": false,
+		"outDir": "build",
+		"experimentalDecorators": true
+	},
+	"include": [
+		"src/"
+	],
+	"lib": [
+		"es2015"
+	]
+}
